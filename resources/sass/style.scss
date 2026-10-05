@@ -1,0 +1,133 @@
+// Global Reset
+* {
+  scroll-behavior: smooth;
+}
+
+// Element Reset
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// Header styles
+.header_css {
+  background-image: url(../images/main_header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 30rem;
+  width: 100%;
+  height: auto;
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+// About Styles
+.content-section {
+  padding: 7rem 0;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+// Service Styles
+.content-section-heading {
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.service-icon {
+  background-color: #fff;
+  color: #ff0000;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7rem;
+  font-size: 2.25rem;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+// Download Section Styles
+.dl_text {
+  padding: 15rem 0;
+  background-image: url(../images/bg-download.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    max-width: 30rem;
+  }
+}
+
+// Portfolio Section Style
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+
+  &:hover {
+    img {
+      transform: scale(0.9);
+    }
+
+    .portfolio-item-caption{
+        background-color: rgba(29, 128, 159, .9);
+        transform: scale(.9);
+    }
+  }
+
+  img, .portfolio-item-caption {
+    transition: 500ms;
+  }
+
+  
+}
+
+.portfolio-item-caption {
+  background-color: rgba(33, 37, 41, 0.6);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: 500ms;
+
+  .portfolio-item-caption-content {
+    color: #fff;
+    margin: auto 2rem 2rem;
+  }
+}
+
+// Footer Styles
+.social-link{
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+    background-color: #10809F;
+}
+
+@media screen and (min-width: 992px) {
+  .header_css {
+    height: 100vh;
+  }
+}
